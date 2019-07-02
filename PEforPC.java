@@ -102,7 +102,7 @@ public class PEforPC {
 		NetworkRegistry.instance().registerGuiHandler(PEforPC.instance,
 				new PEforPCHandler());
 		MinecraftForge.EVENT_BUS.register(new PEforPCHandler());
-		//GameRegistry.registerFuelHandler(new PEforPCHandler());
+		GameRegistry.registerFuelHandler(new PEforPCHandler());
 		
 		// Physical Stuff
 		proxy.registerThings();
